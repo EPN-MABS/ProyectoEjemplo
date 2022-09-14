@@ -1,14 +1,14 @@
 Configura nombre en git 
-git config --global user.name "falcon"
+git config --global user.name "nombreusuario"
 
 Configura email en git
-git config --global user.email "alejandro.bolanos@outlook.es"
+git config --global user.email "email"
 
 visualiza configuracion de git
 git config --list --show-origin
 
 Genera clave ssh de git para unir con github
-ssh-keygen -t rsa -b 4096 -C "alejandro.bolanos@outlook.es"
+ssh-keygen -t rsa -b 4096 -C "email"
 
 copia clave ssh para github
 clip < ~/.ssh/id_rsa.pub
