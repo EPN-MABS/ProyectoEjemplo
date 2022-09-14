@@ -1,0 +1,30 @@
+Configura nombre en git 
+git config --global user.name "falcon"
+
+Configura email en git
+git config --global user.email "alejandro.bolanos@outlook.es"
+
+visualiza configuracion de git
+git config --list --show-origin
+
+Genera clave ssh de git para unir con github
+ssh-keygen -t rsa -b 4096 -C "alejandro.bolanos@outlook.es"
+
+copia clave ssh para github
+clip < ~/.ssh/id_rsa.pub
+
+Clona un repositorio
+git clone Colocarurlrepositorio
+
+verifica si el proyecto a sido cambiado respeto al original
+git status
+
+Permite guardar los cambios de manera local 
+git commit -am "descripcion de lo realizado"
+
+Guarda los cambios en la ruta main del repositorio
+git push origin main(nombre de la ruta)
+
+
+Agrega un archivo nuevo al remoto -> luego commit
+git add nombrearchivo
